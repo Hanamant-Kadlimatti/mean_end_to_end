@@ -8,7 +8,7 @@ var app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:'true'}));
 
-var db = "mongodb://localhost/mean_end_to_end";
+var db = "mongodb://meanendtoend:meanendtoend@ds011870.mlab.com:11870/meanendtoend"//"mongodb://localhost/mean_end_to_end";
 
 mongoose.connect(db, function(err, response){
      if(err){
